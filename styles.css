@@ -31,3 +31,56 @@ p {
 img {
   width: 150px;
 }
+
+.currency {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  padding: 40px 0px;
+}
+
+.currency select {
+  padding: 10px 20px;
+  border: 1px solid #dedede;
+  font-size: 16px;
+}
+
+.currency input {
+  border: 0;
+  background: transparent;
+  font-size: 30px;
+  text-align: right;
+}
+
+.btn {
+  padding: 5px 12px;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  background: var(--primary-color);
+}
+
+.swap-rate-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rate {
+  padding: 0 10px;
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+select:focus,
+input:focus,
+button:focus {
+  outline: 0;
+}
+
+@media (max-width: 600px) {
+  .currency input {
+    width: 200px;
+  }
+}
